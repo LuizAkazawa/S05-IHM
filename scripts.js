@@ -36,8 +36,8 @@ function reservarArmario() {
     // Finalmente, mudamos a pendencia do usuário para verdadeira.
     usuario.pendencia = true;
 
-    horario_retirada: new Date()
-    horariO_entrega: new Date()
+    usuario.horario_retirada = new Date()
+    usuario.horario_entrega = new Date()
 
     usuario.horario_entrega.setDate(usuario.horario_entrega.getDate() + 1); 
     // Formata o horário para o pt-br e remove o fuso-horário
