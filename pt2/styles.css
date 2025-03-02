@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #d9ff00;
+    color: #fff;
+}
+
+.header .icon,
+.header .logo {
+    width: 30px;
+    height: 30px;
+    background-color: #0056b3;
+}
+
+.mensagens {
+    padding: 15px;
+    background-color: #7b07ff;
+    color: #000;
+}
+
+.main {
+    padding: 15px;
+}
+
+.aulas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.disciplina {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.disciplina p {
+    margin: 5px 0;
+}
+
+.noticias {
+    padding: 15px;
+    background-color: #b81717;
+    color: #fff;
+}
+
+.card-de-noticias {
+    margin-bottom: 15px;
+}
+
+.pagination span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+}
