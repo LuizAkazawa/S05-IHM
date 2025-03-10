@@ -1,33 +1,101 @@
+:root {
+    --cor-destaque: #a7a7a7;
+    --cor-caixas: #ffffff;
+    --cor-texto: #000000;
+    --fonte-principal: "Arimo", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8%;
+    background-color: var(--cor-destaque-claro);
+}
+
+
+#menu_aba {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    display: none;
+    border-radius: 10px;
+  }
+
+#menu_bot {
+    position: relative;
+    padding: 20px;
+    display: "block";
+    cursor: pointer;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14pt;
+    color: var(--cor-click);
+    transition: 0.5s;
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-destaque);
     margin: 0;
     padding: 0;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #d9ff00;
-    color: #fff;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Centraliza horizontalmente */
+    padding:0.8%;
+    background-color: #3D1DDB;
 }
 
-.header .icon,
-.header .logo {
-    width: 30px;
-    height: 30px;
-    background-color: #0056b3;
+.icon1 {
+    display: flex;  
+    justify-content: flex-start;  /* Alinha todos os itens à esquerda */
+    align-items: center;  /* Alinha os itens no centro verticalmente, se necessário */
 }
+
+
+.material-icons-outlined {
+    display: flex;
+    font-size: 40%;  /* Tamanho do ícone */
+    color: var(--cor-destaque);  /* Cor personalizada */
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 20%;
+}   
+
+.svg_logo_inatel {
+    width: 60%; /* Ajuste conforme necessário */
+    height: auto;    
+}
+
+.svg_logo_inatel path {
+    fill: white; /* Muda a cor das letras para azul */
+}
+
+
 
 .mensagens {
     padding: 15px;
-    background-color: #7b07ff;
-    color: #000;
+    background-color: var(--cor-caixas);
+    color: var(--cor-texto);
 }
 
 .main {
-    padding: 15px;
+    padding: 1.4%;
 }
 
 .aulas {
@@ -37,31 +105,23 @@ body {
 }
 
 .disciplina {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: var(--cor-caixas);
+    color: var(--cor-texto);
+    padding: 1%;
+    border-radius: 1%;
 }
 
 .disciplina p {
-    margin: 5px 0;
+    margin: 0.4% 0;
 }
 
 .noticias {
-    padding: 15px;
-    background-color: #b81717;
-    color: #fff;
+    padding: 1.4%;
+    background-color: var(--cor-caixas);
+    color: var(--cor-texto);
 }
 
 .card-de-noticias {
     margin-bottom: 15px;
 }
 
-.pagination span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 0 3px;
-}
